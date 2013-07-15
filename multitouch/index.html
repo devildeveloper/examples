@@ -1,21 +1,28 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Whack-a-mole Demo</title>
+        <title>melonJS - multitouch example</title>
         <link rel="stylesheet" type="text/css" media="screen" href="index.css">
         <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
     </head>
     <body>
-        <div id="screen"></div>
+        <!-- Canvas placeholder -->
+		<div id="screen"></div>
+        
+		<!-- melonJS Library -->
 		<script type="text/javascript" src="http://www.melonjs.org/build/melonJS-0.9.8-min.js"></script>
-		<script type="text/javascript" src="js/game.js"></script>
-		<script type="text/javascript" src="js/resources.js"></script>
+        
+		<!-- Game Scripts -->
+        <script type="text/javascript" src="js/game.js"></script>
+		
 		<script type="text/javascript" src="js/entities/entities.js"></script>
-		<script type="text/javascript" src="js/screens/play.js"></script>
+
+        <script type="text/javascript" src="js/screens/play.js"></script>
+		
+		<!-- Bootstrap & Mobile optimization tricks -->
 		<script type="text/javascript">
-			/* Bootstrap */
 			window.onReady(function onReady() {
 				game.onload();
 
