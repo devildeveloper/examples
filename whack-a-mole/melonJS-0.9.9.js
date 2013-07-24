@@ -10226,8 +10226,8 @@ window.me = window.me || {};
 			y -= offset.top;
 			var scale = me.sys.scale;
 			if (scale.x != 1.0 || scale.y != 1.0) {
-				x/=scale.x;
-				y/=scale.y;
+				x/=(scale.x / me.video.getDevicePixelRatio());
+				y/=(scale.y / me.video.getDevicePixelRatio());
 			}
 			return new me.Vector2d(x, y);
 		};
